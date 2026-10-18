@@ -342,7 +342,7 @@ public class ExpenseTrackerApp extends JFrame implements Reportable {
 
     @Override
     public void generateReport() {
-        
+
         Map<String, Double> categoryMap = repository.getAll().stream()
                 .collect(Collectors.groupingBy(Transaction::getCategory, Collectors.summingDouble(Transaction::getAmount)));
 
