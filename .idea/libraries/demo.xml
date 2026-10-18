@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="demo">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/xerial-sqlite-jdbc-cab7981/demo/AppletDemo.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/xerial-sqlite-jdbc-cab7981/demo" />
+      <root url="file://$USER_HOME$/Downloads/xerial-sqlite-jdbc-cab7981/src/main/java" />
+      <root url="file://$USER_HOME$/Downloads/xerial-sqlite-jdbc-cab7981/src/main/java9" />
+      <root url="file://$USER_HOME$/Downloads/xerial-sqlite-jdbc-cab7981/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
