@@ -19,7 +19,6 @@ public class Expense {
     private String category;
     private String date;
 
-
     public Expense() {}
 
     public Expense(String title, double amount, String category, String date) {
@@ -29,7 +28,7 @@ public class Expense {
         this.date = date;
     }
 
-
+    // Getters and Setters (Crucial for JSON binding!)
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
