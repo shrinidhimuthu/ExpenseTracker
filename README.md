@@ -16,4 +16,4 @@ An enterprise-grade Personal Expense & Daily Budget Tracker built with Java 17, 
 1. Clone the repository:
    ```bash
    git clone [https://github.com/shrinidhimuthu/ExpenseTracker.git](https://github.com/shrinidhimuthu/ExpenseTracker.git)
-   cd ExpenseTracker
+   cd ExpenseTrackertr

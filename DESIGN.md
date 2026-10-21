@@ -1,12 +1,17 @@
-# System Design & Architectural Documentation
-
 ## 1. Problem Statement
-Managing personal daily finances requires real-time tracking of income, expenditure, and daily spending caps. Traditional spreadsheet templates or standalone desktop calculators often lack seamless persistence, responsive visual feedback, and clear visibility into daily allowable limits.
+Managing personal daily finances requires real-time tracking of income, expenditure, and daily spending caps. This project provides a robust, enterprise-ready web application that helps users monitor their monthly budget, automatically calculates safe daily allowances based on remaining days in the month, and persists transactions reliably in Indian Rupees (₹).
 
-This project solves this challenge by delivering an enterprise-ready, web-based **Personal Expense & Daily Budget Tracker**. Configured specifically for Indian Rupees (₹), the system maintains real-time tracking of total expenditures, calculates remaining budget allocations, determines remaining days in the active billing month, and dynamically computes a safe daily allowance.
+## 2. Layered Architecture
+The application follows a strict n-tier enterprise architecture:
+1. **Frontend Layer (`static/index.html`):** Built with Tailwind CSS and asynchronous Fetch API.
+2. **Controller Layer (`controller/`):** Exposes REST endpoints (`ExpenseController`) using Spring MVC and legacy Jakarta Servlets.
+3. **Service Layer (`service/`):** Contains core business logic and transaction management.
+4. **Repository Layer (`repository/`):** Uses Spring Data JPA (`ExpenseRepository`) for ORM-based database operations.
+5. **Data Storage Layer:** Lightweight SQLite relational database (`expenses.db`).
 
----
-
-## 2. System Architecture
-
-The application adopts an **N-Tier Enterprise Architecture** built on the Spring Boot ecosystem, maintaining a strict separation of concerns across presentation, business, and persistence layers.
+## 3. Entity Relationship / Data Model (`expenses` Table)
+- `id` (Long, Primary Key, Auto-increment)
+- `title` (String, Expense description)
+- `amount` (double, Transaction value in ₹)
+- `category` (String, Classification type)
+- `date` (String, Transaction date)
