@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/**
+ * REST Controller that exposes endpoints for managing expense transactions.
+ */
 @RestController
 @RequestMapping("/api/expenses")
 public class ExpenseController {

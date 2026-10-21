@@ -14,7 +14,7 @@ public class ExpenseTrackerApplication {
         SpringApplication.run(ExpenseTrackerApplication.class, args);
     }
 
-    // Explicitly register the servlet so Tomcat maps it immediately
+
     @Bean
     public ServletRegistrationBean<ExpenseServlet> expenseServletRegistration() {
         ServletRegistrationBean<ExpenseServlet> bean = new ServletRegistrationBean<>(new ExpenseServlet(), "/legacy-servlet");

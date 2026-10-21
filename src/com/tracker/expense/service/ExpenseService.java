@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * Service layer component responsible for handling business logic
+ * related to personal expenses and budget tracking.
+ */
 @Service
 public class ExpenseService {
 
